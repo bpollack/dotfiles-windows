@@ -1,15 +1,19 @@
-[credential]
-	helper = manager-core
-[pull]
-	ff = only
-[user]
-	name = Benjamin Pollack
-	email = benjamin@bitquabit.com
-[transfer]
-	fsckObjects = true
-[init]
-	defaultBranch = main
 [alias]
 	f = fetch
 	hist = log --oneline --decorate --graph
 	st = status
+	mf = merge --ff-only
+	amend = commit --amend
+[core]
+	editor = code --wait
+[credential]
+	helper = manager-core
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
+[transfer]
+	fsckObjects = true
+[user]
+	name = Benjamin Pollack
+	email = benjamin@bitquabit.com

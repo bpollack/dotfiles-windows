@@ -1,9 +1,12 @@
 [alias]
+	amend = commit --amend
+	co = checkout
+	emend = commit --amend --no-edit
 	f = fetch
 	hist = log --oneline --decorate --graph
-	st = status
 	mf = merge --ff-only
-	amend = commit --amend
+	st = status
+	wn = log ..origin/master
 [core]
 	editor = code --wait
 [credential]
